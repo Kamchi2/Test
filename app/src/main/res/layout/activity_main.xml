@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/firstNumber_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1 Number"
+
+        />
+    <EditText
+        android:id="@+id/secondNumber_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2 Number"
+        />
+    <Button
+        android:id="@+id/calculatePlusBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calculate plus"
+        />
+    <Button
+        android:id="@+id/calculateDevideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="calculate devide"
+        />
+
+</LinearLayout>
