@@ -60,7 +60,7 @@ class MainActivityTest {
         type(R.id.firstNumber_et, "2.5")
         type(R.id.secondNumber_et, "6.43")
         click(R.id.calculatePlusBtn)
-        onView(withId(R.id.result_tv)).check(ViewAssertions.matches(ViewMatchers.withText("Символы вводить нельзя")))
+        onView(withId(R.id.result_tv)).check(ViewAssertions.matches(ViewMatchers.withText("Дробные числа вводить нельзя")))
     }
 
     //devide
@@ -98,6 +98,6 @@ class MainActivityTest {
         type(R.id.firstNumber_et, "2.5")
         type(R.id.secondNumber_et, "6.43")
         click(R.id.calculateDevideBtn)
-        onView(withId(R.id.result_tv)).check(ViewAssertions.matches(ViewMatchers.withText("Символы вводить нельзя")))
+        onView(withId(R.id.result_tv)).check(ViewAssertions.matches(ViewMatchers.withText("Дробные числа вводить нельзя")))
     }
 }

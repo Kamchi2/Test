@@ -7,7 +7,10 @@ class Math {
     fun add(a: String, b: String): String {
         var result = ""
 
-        if(!isNumeric(a) || !isNumeric(b)) {
+        if("." in a || "." in b) {
+            result = "Дробные числа вводить нельзя"
+        }
+        else if(!isNumeric(a) || !isNumeric(b)) {
             result = "Символы вводить нельзя"
         } else {
             val num1 = a.trim().toInt()
@@ -20,7 +23,10 @@ class Math {
     fun devide(a: String, b: String): String {
         var result = ""
 
-        if(!isNumeric(a) || !isNumeric(b)) {
+        if("." in a || "." in b) {
+            result = "Дробные числа вводить нельзя"
+        }
+        else if(!isNumeric(a) || !isNumeric(b)) {
             result = "Символы вводить нельзя"
         } else if (b.toInt()<=0) {
             result = "Делитель не должен быть нулем или отрицательным числом"

@@ -36,7 +36,7 @@ class MathTest {
 
     @Test
     fun doubleAddCase() {
-        assertEquals("Символы вводить нельзя", math?.add("2.3", "2.1"))
+        assertEquals("Дробные числа вводить нельзя", math?.add("2.3", "2.1"))
     }
     // devide
 
@@ -62,7 +62,7 @@ class MathTest {
 
     @Test
     fun doubleDevideCase() {
-        assertEquals("Символы вводить нельзя", math?.devide("25.5", "5"))
+        assertEquals("Дробные числа вводить нельзя", math?.devide("25.3", "5.6"))
     }
 
     @After
